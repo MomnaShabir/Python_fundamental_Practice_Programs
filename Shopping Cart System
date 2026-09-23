@@ -1,0 +1,43 @@
+cart=[]
+
+while True:
+    print("\n---Shopping Cart Menu---")
+    print("1. Add item")
+    print("2: Remove item")
+    print("3:View cart")
+    print("4:Exit")
+
+    choice = input("Enter your choice(1-4):")
+    if choice == "1":
+        item=input("Enter item name to add:")
+        cart.append(item)
+        print(item, "added to cart")
+        more=input("Add more items? (yes/no):").lower()
+        while more == "yes":
+            
+            item=input("Enter item name to add:")
+            cart.append(item)
+            print(item, "added to cart")
+            more = input("Do you want to add more items?(yes/no):").lower()
+        else:
+            break
+    elif choice == "2":
+        item=input("Enter item name to remove:")
+        if item in cart:
+            cart.remove(item)
+            print(item, "removed from cart")
+        else:
+            print("item not found")
+    
+    elif choice == "3":
+        if len(cart)==0:
+            print("Your cart is empty")
+        else:
+            print("items in your cart")
+            for i in cart:
+                print("-",i)
+    elif choice == "4":
+        print("Thankyou for your shopping")
+        break 
+    else:
+        print("Invalid choice,try again")

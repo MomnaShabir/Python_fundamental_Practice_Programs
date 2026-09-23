@@ -1,0 +1,36 @@
+def shopping_bill(customer_name,*items,discount=0,**charges):
+    print("customer Name:",customer_name)
+    print("Items Purchased:",len(items))
+    total=0
+    for price in items:
+        total += price
+    print("Total item price:",total)
+    for charge_name,amount in charges.items():
+        print(charge_name,":",amount)
+        total += amount
+    if discount > 0:
+        total -= discount
+        print("Discount:",discount)
+    print("Final Bill:",total)
+
+customer_name=input("Enter customer name:")
+count=int(input("How many items?"))
+items=[]
+for i in range(count):
+    price=int(input(f"Enter price of item{i+1}:"))
+    items.append(price)
+discount =int(input("Enter discount(0 if none):"))
+delivery =int(input("Enter delivery charges:"))
+service_tax = int(input("Enter service tax:" ))
+
+shopping_bill(
+    customer_name,
+    *items,
+    discount=discount,
+    delivery=delivery,
+    service_tax=service_tax)
+
+
+
+ 
+

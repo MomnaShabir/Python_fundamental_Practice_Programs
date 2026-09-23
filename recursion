@@ -1,0 +1,28 @@
+# def countdown(n):
+#     if n == 0:
+#          print("stop")
+#     else:
+#          print(n)
+#          countdown(n-1)
+         
+# countdown(int(input("Enter a number to start the countdown:")))
+
+
+#practice _Dictiontionary
+
+student = {
+    "name": "Ali",
+    "age": 12,
+    "grade": 6,
+    "subjects": {"Math", "English", "Science"},
+    "marks": {
+        "Math": 85,
+        "English": 78,
+        "Science": 90
+    }
+}
+
+print(student['name'])
+print(student["marks"]["Science"])
+student["subjects"]["Urdu"]="New subject"
+# print(student["subjects"].keys())

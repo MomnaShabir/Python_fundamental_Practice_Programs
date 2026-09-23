@@ -1,0 +1,17 @@
+questions=[("Q:1 which planet is known as the Red Planet?\na: Earth\nb =Mars\nc :Jupiter\nd: Venus","b"),
+("Q:2 /nWhich of the following is a progamming language?\na:Python\nb:Cobra\nc:Anaconda\nd:Viper","a"),
+(" Q:3 /nWhich of the following is the largest ocean in the world?\na:Indian Ocean\nb:Atlantic Ocean\nc:Pacific Ocean\nd:Arctic Ocean","c"),]
+prizes=[1000,2000,3000,]
+print("welcome to Mini KBC🥰")
+score=0
+for i,(q,correct) in enumerate(questions):
+    
+    print(q)
+    answer=input("Enter your answer (A/B/C/D):").lower()
+    if answer==correct:
+        print(f"Correct!You won the prize{prizes[i]}!")
+        score=prizes[i]
+    else:
+        print(f"Wrong answer!The correct answer was {correct}.")
+        break
+print(f"\nGame Over! You won a total of {score}!")

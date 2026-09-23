@@ -1,0 +1,13 @@
+# my_tuple=(10,20,30)
+# print(my_tuple)
+
+# print(my_tuple[0])
+# print(my_tuple[-1])
+
+# def multiply(a,b):
+#     print(a*b)
+# multiply(4,5)
+
+def full_name(first name,second name)
+    print(first_name,second_name)
+full_name("Ali","khan")

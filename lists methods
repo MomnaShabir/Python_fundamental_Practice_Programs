@@ -1,0 +1,23 @@
+products=[("Milk", 180 , "Dairy"),("Rice",350,"Grains")]
+cart=[]
+print("Welcome to Grocery App\n")
+print("Available Produduts:")
+for index , product in enumerate(products):
+    print(index+1,product[0],"-Rs",product[1]) 
+while True:
+    choice=input("\nEnter product number to add to cart (or 'no'to stop):")
+    if choice.lower()=="no":
+        break
+    choice=int(choice)-1
+    if 0 <= choice <len(products):
+        cart.append(products[choice])
+        print(products[choice][0],"added to cart.")
+    else:
+        print("Invalid choice!")
+    print("\nYour Bill")
+    total=0
+    for item in cart:
+        print(item[0],"-Rs",item [1])
+        total += item[1]
+    print("Total Amount: Rs",total)
+
