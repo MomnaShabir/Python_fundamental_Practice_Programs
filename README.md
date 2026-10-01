@@ -1,19 +1,17 @@
-# Python Calculator Project
+# Python Fundamentals Practice 🐍
 
-![Calculator Demo](demo.png)
+A collection of Python programs I created while learning and practicing Python fundamentals.
 
-This is my first Python project — a simple terminal-based calculator.
+## Topics Covered
 
-## Features
-- Add
-- Subtract
-- Multiply
-- Divide (with zero check)
-- Exit option
+* Variables and data types
+* Conditional statements
+* Loops
+* Functions
+* Lists, tuples, dictionaries, and sets
+* Strings
+* Exception handling
+* File handling
+* Basic problem-solving and practice projects
 
-## Skills demonstrated
-- Python basics
-- Variables and input/output
-- Conditional statements (if/elif)
-- Loops (while)
-- Handling divide-by-zero error
+This repository documents my learning journey and continuous practice with Python.
